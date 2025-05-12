@@ -1,15 +1,31 @@
-# SmartSort - Smart File Organizer 📁✨
+# 🗂️ SmartSort - File Organizer
 
-SmartSort is a Python-based script that helps you organize your messy directories by sorting files into folders based on their type.
+SmartSort is a Python-based file organization tool that automatically sorts files in a given directory into categorized folders (Images, Documents, Videos, etc.).
 
-## 🔧 Features
+## ✨ Features
 
-- Organizes files into: Images, Documents, Audio, Videos, Archives, Others
-- Automatically creates missing folders
-- Logs movements to `log.txt`
-- Handles errors gracefully
-- Colorful terminal output using Colorama
+- Categorizes files by type (Images, Documents, Audio, Video, Archives, Others)
+- Automatically creates folders if not present
+- Handles file permission and access errors
+- Logs moved files to `log.txt`
+- Command-line interface with colorful output using `colorama`
 
-## 🚀 How to Run
+## 📁 Categories
 
-1. Clone this repo  
+- 📷 Images: `.jpg`, `.png`, `.jpeg`, `.gif`
+- 📄 Documents: `.pdf`, `.docx`, `.txt`, `.pptx`
+- 🎞️ Videos: `.mp4`, `.mkv`, `.mov`
+- 🎵 Audio: `.mp3`, `.wav`
+- 📦 Archives: `.zip`, `.rar`, `.tar`, `.gz`
+
+## 🔧 Installation
+
+```bash
+git clone https://github.com/devendrahere/FileOrganizer.git
+cd FileOrganizer
+python -m venv venv
+venv\Scripts\activate  # On Windows
+pip install -r requirements.txt
+
+python organiser/organiser.py
+All moved files are logged in log.txt.
